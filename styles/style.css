@@ -52,13 +52,16 @@ body {
 
 .error {
   border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.541);
 }
 
 .success {
   border: 1px solid lime;
+  background-color: rgba(0, 255, 0, 0.541);
 }
 
 .error-message {
-  font-size: 14px;
+  font-size: 12px;
   color: red;
+  font-family: sans-serif;
 }/*# sourceMappingURL=style.css.map */
