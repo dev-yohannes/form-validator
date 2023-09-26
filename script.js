@@ -44,9 +44,13 @@ const removeErrorAddSuccess = () => {
 };
 */
 
+// validations
+const usernameValidator = /^[a-zA-Z]{3,}$/;
+const emailValidator = /[@.]/;
+const passwordValidator = /[a-zA-Z0-9]{5,}/;
+
 // username validation
 usernameInput.addEventListener("keyup", () => {
-  const usernameValidator = /^[a-zA-Z]{3,}$/;
   if (usernameValidator.test(usernameInput.value)) {
     usernameInput.classList.remove("border-class");
     usernameInput.classList.add("success");
@@ -59,7 +63,6 @@ usernameInput.addEventListener("keyup", () => {
 
 // email validation
 emailInput.addEventListener("keyup", () => {
-  const emailValidator = /[@.]/;
   if (emailValidator.test(emailInput.value)) {
     emailInput.classList.remove("border-class");
     emailInput.classList.add("success");
@@ -71,7 +74,6 @@ emailInput.addEventListener("keyup", () => {
 
 // password validator
 passwordInput.addEventListener("keyup", () => {
-  const passwordValidator = /[a-zA-Z0-9]{5,}/;
   if (passwordValidator.test(passwordInput.value)) {
     localStorage.setItem("savedPassword", passwordInput.value);
     passwordInput.classList.remove("border-class");
