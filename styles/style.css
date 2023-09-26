@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 1px 1px 20px 2px #4b4b4b;
+  border-radius: 5px;
+  padding: 20px;
+  width: 330px;
+}
+.container h2 {
+  text-align: center;
+  margin: 10px 0px;
+}
+.container div {
+  margin: 20px 0px;
+}
+.container div label {
+  color: gray;
+}
+.container div input {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  margin-top: 3px;
+  border-radius: 3px;
+}
+.container div .border-class {
+  border: 1px solid gray;
+}
+.container button {
+  background-color: rgb(88, 99, 247);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 35px;
+  cursor: pointer;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.success {
+  border: 1px solid lime;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+}/*# sourceMappingURL=style.css.map */
