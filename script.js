@@ -101,6 +101,25 @@ const divs = [
 ];
 */
 
+submitButton.addEventListener("mouseenter", () => {
+  usernameInput.classList.add("border-class");
+  usernameInput.classList.remove("success");
+  usernameInput.classList.remove("error");
+
+  emailInput.classList.add("border-class");
+  emailInput.classList.remove("success");
+  emailInput.classList.remove("error");
+
+  passwordInput.classList.add("border-class");
+  passwordInput.classList.remove("success");
+  passwordInput.classList.remove("error");
+
+  confirmPasswordInput.classList.add("border-class");
+  confirmPasswordInput.classList.remove("success");
+  confirmPasswordInput.classList.remove("error");
+});
+
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
+  alert("Thank you for registering");
 });
