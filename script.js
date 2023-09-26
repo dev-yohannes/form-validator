@@ -122,4 +122,8 @@ submitButton.addEventListener("mouseenter", () => {
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   alert("Thank you for registering");
+  usernameInput.value = "";
+  emailInput.value = "";
+  passwordInput.value = "";
+  confirmPasswordInput.value = "";
 });
