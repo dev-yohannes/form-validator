@@ -15,7 +15,7 @@ allDivs.forEach((div) => {
 });
 
 submitButton.addEventListener("click", () => {
-  usernameValidator = /[a-z0-9]{5,15}/;
+  usernameValidator = /[a-zA-Z0-9]{5,15}/;
   if (usernameValidator.test(usernameInput.value)) {
     usernameInput.classList.remove("border-class");
     usernameInput.classList.add("success");
@@ -33,7 +33,7 @@ submitButton.addEventListener("click", () => {
     emailInput.classList.add("error");
   }
 
-  passwordValidator = /[a-zA-Z@#$%^&*_-]{5,}/g;
+  passwordValidator = /[a-zA-Z@#$%^&*_-]{8,}/g;
   if (passwordValidator.test(passwordInput.value)) {
     passwordInput.classList.remove("border-class");
     passwordInput.classList.add("success");
