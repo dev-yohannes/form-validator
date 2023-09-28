@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <h2>Register With Us</h2>
-      <div class="username-section">
+      <div class="username-section divs">
         <label for="username">Username</label><br />
         <input
           type="text"
@@ -17,10 +17,14 @@
           id="username-input"
           class="form-input border-class"
           placeholder="Enter username"
+          autocomplete="off"
           required
         />
+        <p class="hint-message" value="1">
+          Username can be alphanumeric and contain 5 - 12 characters
+        </p>
       </div>
-      <div class="email-section">
+      <div class="email-section divs">
         <label for="email">Email</label><br />
         <input
           type="email"
@@ -28,10 +32,14 @@
           id="email-input"
           class="form-input border-class"
           placeholder="Enter email"
+          autocomplete="off"
           required
         />
+        <p class="hint-message" value="2">
+          Email must be a valid address e.g. (example@domain.com)
+        </p>
       </div>
-      <div class="password-section">
+      <div class="password-section divs">
         <label for="password">Password</label><br />
         <input
           type="password"
@@ -41,8 +49,12 @@
           placeholder="Enter password"
           required
         />
+        <p class="hint-message" value="3">
+          Password must be alphanumeric (@, _ and - are allowed) and must be 8 -
+          20 characters
+        </p>
       </div>
-      <div class="confirm-password-section">
+      <div class="confirm-password-section divs">
         <label for="confirm-password">Comfirm Password</label><br />
         <input
           type="password"
@@ -56,7 +68,8 @@
       <button type="submit" id="submit">Submit</button>
     </div>
     <!--  -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
     <!--  -->
   </body>
 </html>
