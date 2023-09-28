@@ -8,7 +8,7 @@ const submitButton = document.querySelector("#submit");
 const hintMessage = document.querySelectorAll(".hint-message");
 
 allDivs.forEach((div) => {
-  div.addEventListener("click", () => {
+  div.addEventListener("mouseenter", () => {
     let message = div.children[3];
     message.style.display = "block";
   });
