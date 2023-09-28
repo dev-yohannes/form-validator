@@ -17,38 +17,30 @@ allDivs.forEach((div) => {
 submitButton.addEventListener("click", () => {
   usernameValidator = /[a-zA-Z0-9]{5,15}/;
   if (usernameValidator.test(usernameInput.value)) {
-    usernameInput.classList.remove("border-class");
-    usernameInput.classList.add("success");
+    usernameInput.style.borderColor = "lime";
   } else {
-    usernameInput.classList.remove("border-class", "success");
-    usernameInput.classList.add("error");
+    usernameInput.style.borderColor = "red";
   }
 
   emailInputValidator = /^[\w\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
   if (emailInputValidator.test(emailInput.value)) {
-    emailInput.classList.remove("border-class");
-    emailInput.classList.add("success");
+    emailInput.style.borderColor = "lime";
   } else {
-    emailInput.classList.remove("border-class", "success");
-    emailInput.classList.add("error");
+    emailInput.style.borderColor = "red";
   }
 
   passwordValidator = /[a-zA-Z@#$%^&*_-]{8,}/g;
   if (passwordValidator.test(passwordInput.value)) {
-    passwordInput.classList.remove("border-class");
-    passwordInput.classList.add("success");
+    passwordInput.style.borderColor = "lime";
     localStorage.setItem("savedPassword", passwordInput.value);
   } else {
-    passwordInput.classList.remove("border-class", "success");
-    passwordInput.classList.add("error");
+    passwordInput.style.borderColor = "red";
   }
 
   if (confirmPasswordInput.value === localStorage.getItem("savedPassword")) {
-    confirmPasswordInput.classList.remove("border-class");
-    confirmPasswordInput.classList.add("success");
+    confirmPasswordInput.style.borderColor = "lime";
   } else {
-    confirmPasswordInput.classList.remove("border-class", "success");
-    confirmPasswordInput.classList.add("error");
+    confirmPasswordInput.style.borderColor = "red";
   }
 });
 
